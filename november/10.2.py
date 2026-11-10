@@ -6,13 +6,18 @@ digits = int(input("Please enter 6 digits 1 - 5: "))
 
 # make 4 arrays
 
-arts = ["the","a","one","every","any"]
+list = [["the","a","one","every","any"],
+        ["boy", "girl", "dog", "car", "tree"],
+        ["jumped", "skipped", "stepped", "walked", "ran"],
+        ["under", "over", "along", "with", "beside"]]
 
-nouns = ["boy", "girl", "dog", "car", "tree"]
 
-verbs = ["jumped", "skipped", "stepped", "walked", "ran"]
 
-preps = ["under", "over", "along", "with", "beside"]
+# nouns = ["boy", "girl", "dog", "car", "tree"]
+
+# verbs = ["jumped", "skipped", "stepped", "walked", "ran"]
+
+# preps = ["under", "over", "along", "with", "beside"]
 
 
 
