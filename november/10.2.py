@@ -4,6 +4,15 @@
 
 digits = int(input("Please enter 6 digits 1 - 5: "))
 
+# make 4 arrays
+
+arts = ["the","a","one","every","any"]
+
+nouns = ["boy", "girl", "dog", "car", "tree"]
+
+verbs = ["jumped", "skipped", "stepped", "walked", "ran"]
+
+preps = ["under", "over", "along", "with", "beside"]
 
 
 
