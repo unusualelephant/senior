@@ -1,14 +1,45 @@
+# second example
+
+#  article, noun, verb, preposition, article, and noun.
+
+digits = int(input("Please enter 6 digits 1 - 5: "))
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# first example of 10-2
+
+"""
+
+alpha = 0
+digit = 0
+specs = 0
+
+sentence = str(input("Please enter a sentence: "))
 while True:
-    a = str(input("Enter a sentence: "))
-    if a.isalpha()== True or a.isdigit() == True:
-        print(a)            
-        break
+    for x in sentence:
+        if x.isalpha():
+            alpha +=1
+        if x.isdigit():
+            digit += 1
+        else:
+            specs += 1
+    print("Number of Alphabets in the string is:",alpha,"\nNumber of Digits in the string is:",digit,"\nNumber of Special characters in the string is:",specs)
+    break 
     
-    else:
-        print("Letters or Numbers only.")
-        True
+"""
+
 
 
 
