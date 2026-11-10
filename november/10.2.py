@@ -1,7 +1,5 @@
 
 
-
-
 while True:
     a = str(input("Enter a sentence: "))
     if a.isalpha()== True or a.isdigit() == True:

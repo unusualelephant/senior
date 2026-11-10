@@ -1,27 +1,30 @@
 #word guessing game
-
+import random
 
 artists = ["Monet", "Manet", "Cassatt", "Degas", "Cezanne", "Renoir"]
 
 # randomly select an artist from the list
 
-import random
+
 x = random.choice(artists).lower()
 print(x)
+ctr = 0
+guesses = '' 
 
-while True:
-    guess = str(input("Guess letter (you have 6 tries): "))
-    ctr = 0
-    if guess in x:
-        print("You guessed a letter in the word!")
-        a = x.replace(guess, "")
-        print(a)
-        if len(x) == 0:
-            print("You guessed the artist! It was " + x + ".")
-            break
-    else:
-        print("Try again.")
-        ctr += 1
-        if ctr == 6:
-            print("Game over!")
+while ctr < 5:
+    strike = 0
+    guess = str(input("Guess any letter :) (you have 6 tries!): "))
+    for y in x:
+        if guess in x:
+            print(guess,end=" ")
+        else:
+            print("__", end=" ")
+            strike += 1
+    if strike == 0:
+        print("You win! The artist was",x.title(),"!")
+        break
 
+    guesses += x
+    print(guesses)
+
+print("You ran out of guesses!\nThe artist was",x.title(),"!")
