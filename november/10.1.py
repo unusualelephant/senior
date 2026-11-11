@@ -1,5 +1,49 @@
 
 
+while True:
+    email = str(input("Email address: "))
+    if "@" or "." not in email:
+        print("Try Again.")
+        True
+    else:
+        break
+print("User name:",email)
+        
+# doesn't work lol
+    
+
+
+
+
+
+
+"""
+
+city = str(input("City: ")).title()
+city.strip()
+if "St" in city:
+    city = city.replace("St", "Saint")
+
+while True:
+    state = str(input("State: ")).upper()
+    if len(state) != 2:
+        print("State must be in 2-letter abbreviation.")
+        True
+    else:
+        break
+
+while True:
+    zipcode = str(input("Zip Code: "))
+    if len(zipcode) != 5:
+        print("Zip code must be 5 digits long.")
+        True
+    else:
+        break
+
+
+print(city,state,zipcode)
+
+"""
 
 
 
@@ -7,21 +51,34 @@
 
 
 
-sen = str(input("Write a sentence:"))
-lctr = 0
-numctr = 0
-ectr = 0
 
-if sen.isalpha() == True:
-    lctr += 1
-elif sen.isdigit() == True:
-    numctr += 1
+
+
+"""
+
+
+sentence = str(input("Please enter a sentence: "))
+
+number = int(input("Please enter a number: ")) - 1
+
+print(len(sentence))
+sentence = sentence.split()
+print(number)
+
+if number > len(sentence):
+    print("Error. Out of bounds.")
 else:
-    ectr += 1
-    print("Letters or Numbers only.")
+    print("Your returned string is:", sentence[number],".")
+
+"""
 
 
-# this doesnt work rightnow
+
+
+
+
+
+# i made it work!
 
 
 
