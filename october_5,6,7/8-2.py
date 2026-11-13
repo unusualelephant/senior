@@ -1,14 +1,45 @@
-while True:
+def change():
     try:
-        def selective_sum():
-            mis = ['10','nine','8','seven','6','five']
-            for x in mis:
-                print(x, end=" ")
-    except Exception as e:
-        print(e)
-    selective_sum()
-    break
+        my_numbers = [100, 200, 300, 400]
+        index = int(input("Enter the index (0-3) to update: "))
+        new_num = float(input("Enter the new number value: "))
 
+        my_numbers[index] = new_num
+
+        # print(my_numbers)
+    except ValueError:
+        print("Input Error: Both the index and value numbers must both be valid.")
+    except IndexError:
+        print("List Error: The index is outside the list (must be 0, 1, 2, or 3).")
+    print("Update successful! New list:",my_numbers)
+
+while True:
+    change()
+
+
+
+
+
+
+
+"""
+
+def selective_sum(I):
+    total = 0
+    for i in I:
+        print("Processing item:",i, end="\n")
+        try:
+            total += float(i)
+        except ValueError:
+            print("--> Skipped! Not a number.")
+            pass
+    return total
+
+data_list = ['10', 'fail', 5, 'okay', '25', 1.5]
+
+print(selective_sum(data_list))
+
+"""
 
 
 
